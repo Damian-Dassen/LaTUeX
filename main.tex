@@ -1,0 +1,213 @@
+%TU/e scientific report template by various students
+\documentclass{article}
+
+%title of thesis
+\newcommand{\doctitle}{Title}
+
+%subtitle of thesis
+\newcommand{\docsubtitle}{Subtitle}
+
+%names of the authors; separate with \\
+\newcommand{\docauthors}{Authors}
+
+%title displayed on each page header 
+\newcommand{\pageheader}{Headertitle}
+
+%importing usepackages
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{tabto}
+\usepackage{a4wide}
+\usepackage[margin = 1in]{geometry}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mwe}
+\usepackage{enumitem}
+
+
+
+%commands to ease mathematical notation of common symbols
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Np}{\mathbb{N}^{+}}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Zp}{\mathbb{Z}^{+}}
+\newcommand{\Zm}{\mathbb{Z}^{-}}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Qp}{\mathbb{Q}^{+}}
+\newcommand{\Qm}{\mathbb{Q}^{-}}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Rp}{\mathbb{R}^{+}}
+\newcommand{\Rm}{\mathbb{R}^{-}}
+
+\newcommand{\C}{\mathbb{C}}
+
+
+
+%QED symbol
+\renewcommand\qedsymbol{\blacksquare}
+
+
+
+%commands to ease definition, theorem, lemma and corollary notation. Use \label to ease referencing
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}{Corollary}[theorem]
+
+
+
+%for the fancy headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\pageheader}
+\rhead{\includegraphics[width = .2\textwidth]{Images/tue-logo-high.jpg}}
+\cfoot{\thepage}
+
+%for a title page
+\title{\includegraphics[width=0.7\textwidth]{Images/tue-logo-high.jpg}\\}
+
+\author{\docauthors}
+
+\begin{document}
+% CHANGES START
+
+\begin{titlepage}
+\begin{center}
+\includegraphics[height=2cm]{Images/tue-logo-high.jpg}\\
+%\LARGE
+%Eindhoven University of Technology \\
+\large
+Eindhoven University of Technology  \\
+
+
+\vspace*{2cm}
+
+    \vspace*{1mm}
+    \rule{15cm}{0.8mm}\\
+    \huge
+    \textbf{\doctitle \\}
+    \large
+    \text{\docsubtitle}
+    \rule{15cm}{0.8mm}\\
+    \Large
+    \vspace*{5mm}
+    \vspace*{10mm}
+    \Large
+    \docauthors\\
+
+\vfill
+%\docdate \\
+\large
+University of Eindhoven\\
+\today\\
+
+% Put the Paragraph Indent back to its original value
+\end{center}
+\end{titlepage}
+
+
+\thispagestyle{plain}
+\begin{center}
+    \Large
+    \textbf{\doctitle}
+        
+    \vspace{0.2cm}
+    
+    \normalsize
+    \docsubtitle
+    
+    \Large
+    \vspace{0.6cm}
+    \section*{\textbf{Abstract}}
+    \addcontentsline{toc}{section}{Abstract}
+\end{center}
+
+%abstract text begin
+
+
+%abstract text end
+
+\newpage
+
+\tableofcontents
+
+%copy this to get ToC elements without numbers that show up in the ToC
+%\section*{\textbf{TOC Element}}
+%\addcontentsline{toc}{section}{TOC Element}
+
+
+\newpage
+
+\section*{\textbf{Introduction}}
+\addcontentsline{toc}{section}{Introduction}
+
+
+
+
+\newpage
+
+\section*{\textbf{Theoretical Background}}
+\addcontentsline{toc}{section}{Theoretical Background}
+
+
+
+
+\newpage
+
+\section*{\textbf{Experimental Setup}}
+\addcontentsline{toc}{section}{Experimental Setup}
+
+
+
+
+\newpage
+
+\section*{\textbf{Results}}
+\addcontentsline{toc}{section}{Results}
+
+
+
+
+\newpage
+
+\section*{\textbf{Discussion}}
+\addcontentsline{toc}{section}{Discussion}
+
+
+
+
+\newpage
+
+\section*{\textbf{Bibliography}}
+\addcontentsline{toc}{section}{Bibliography}
+
+
+
+
+\newpage
+
+\section*{\textbf{Appendix A: Error Analysis}}
+\addcontentsline{toc}{section}{Appendix A: Error Analysis}
+
+
+
+
+\newpage
+
+\section*{\textbf{Appendix B: Code}}
+\addcontentsline{toc}{section}{Appendix B: Code}
+
+
+
+
+\end{document}
